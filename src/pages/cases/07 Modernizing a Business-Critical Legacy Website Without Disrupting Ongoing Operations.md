@@ -1,0 +1,84 @@
+## Project Status
+
+**Ongoing Transformation Program**
+
+## Challenge
+
+The company's primary website had evolved over many years without a unified product strategy or governance model.
+
+Multiple business units used the website as a lead-generation channel, often operating independently and pursuing different objectives. Over time, this resulted in:
+- Significant technical debt
+- Inconsistent user experience
+- Fragmented content structure
+- Visual inconsistency
+- Growing maintenance complexity
+
+The situation became particularly critical after a major technical incident highlighted the risks associated with the platform's accumulated debt.
+
+While a complete rebuild might have appeared attractive, it was neither financially practical nor operationally safe. The website remained a business-critical asset that could not be disrupted.
+
+## My Role
+
+I was responsible for defining a modernization strategy that would improve the website incrementally while maintaining business continuity.
+
+In addition to product ownership responsibilities, I also led information architecture improvements, wireframing, and design-system development due to the absence of dedicated UX and design roles within the organization.
+
+## Discovery and Assessment
+
+The first step was understanding the scale of the problem.
+
+I conducted:
+
+- A comprehensive website audit
+- Competitor analysis
+- Review of content structure and navigation
+- Assessment of user experience issues
+- Identification of technical and organizational risks
+
+This work provided the foundation for a long-term modernization strategy.
+
+## Defining an Incremental Transformation Strategy
+
+Rather than pursuing a high-risk full redesign, I proposed a phased improvement approach.
+
+The strategy focused on:
+
+- Addressing the most visible user experience issues first
+- Improving consistency across the platform
+- Introducing reusable design standards
+- Reducing future maintenance costs
+- Building stakeholder support for ongoing modernization efforts
+
+This allowed improvements to be delivered continuously without disrupting existing business processes.
+
+## Managing Stakeholder Alignment
+
+One of the most significant challenges was balancing the needs of multiple stakeholder groups.
+
+Different teams depended on the website for lead generation, content promotion, and product visibility, often with competing priorities.
+
+My role involved building consensus around a shared direction while ensuring that modernization efforts did not negatively impact business objectives.
+
+## Early Improvements
+
+As part of the first phase, I delivered several foundational improvements:
+- Redesign of the website header and footer
+- Creation of improved page layouts for internal content pages
+- Introduction of clearer information hierarchy and content presentation
+- Initial development of a design system to support future consistency
+
+These changes established a framework for larger improvements while immediately improving usability and visual quality.
+
+## Current Status
+
+The modernization programme is ongoing.
+
+The strategic direction has been defined, foundational design improvements have been introduced, and a design system is being developed to support future phases of the transformation.
+
+## Key Takeaway
+
+The challenge was not redesigning a website.
+
+It was creating a realistic path from a fragmented legacy platform to a modern digital product without disrupting the business functions that depended on it.
+
+By focusing on incremental modernization rather than large-scale replacement, I established a sustainable approach to long-term product improvement.

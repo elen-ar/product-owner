@@ -1,0 +1,61 @@
+## **Enterprise CMS Migration Under a Fixed Launch Deadline**
+
+### **Overview**
+
+I led the migration of a large multilingual corporate website (5,000+ pages, 5 languages) from an open-source CMS to Sitecore.
+
+The goal was to launch the new platform before a major industry event in January. The timeline was aggressive from the start, the implementation was outsourced to an external agency, and there was no in-house Sitecore expertise on either the business or delivery side.
+
+As Senior Manager Web Services, I coordinated the work between marketing stakeholders, content managers, developers, and the external contractor while running the delivery process, roadmap, specifications, and launch planning.
+
+---
+
+### **Challenges**
+
+The project quickly became more complicated than the original plan suggested.
+
+The approved design system arrived with major UX, UI, and accessibility issues, plus a lot of missing production scenarios. Since we had no in-house designer, I had to either define missing UI behavior myself or coordinate design fixes with the contractor during implementation.
+
+A significant part of the project involved migrating highly structured content sections — news, case studies, and resource libraries — with filters, aggregations, and interconnected content models. I worked directly with the agency backend developer to define migration rules, mappings, and validation logic for these sections.
+
+At the same time, several operational problems surfaced dangerously late in the process.
+
+I discovered that almost 100 legal and service pages had never been included in the migration scope by marketing. Some content was outdated, partially untranslated, or missing entirely across multiple languages. Since these pages were mandatory for launch, I ended up coordinating directly with the legal department and manually helping prepare and migrate the missing content together with our frontend developer.
+
+Another issue appeared when the agency received our redirect list: roughly 15,000 URLs. Although redirect migration had originally been confirmed as “not a problem,” the contractor later admitted their planned solution could not handle the required scale. I worked with developers and DevOps to redesign the redirect logic into something technically manageable within the existing constraints.
+
+Performance became another major blocker. Once content managers started working in Sitecore, it turned out that creating a single page could take 20–25 hours due to the way “editorial templates” had been implemented. The contractor initially insisted this was acceptable, but I escalated the issue and pushed for a redesign until editorial workflows became usable again.
+
+The final stage of the project coincided with my international relocation. Despite the logistical challenges that came with it, the delivery timeline and launch preparation remained on track.
+
+---
+
+### **What I Did**
+
+I managed the delivery process from planning to launch readiness.
+
+I created and maintained the roadmap, organized workflows in Jira, wrote detailed specifications in Confluence, and coordinated communication between all parties involved: marketing, developers, content managers, legal stakeholders, and the external agency.
+
+Because there was no internal Sitecore expertise at the start, I also participated in hiring a dedicated Sitecore frontend developer and onboarded him into the project while delivery was already in progress.
+
+On the technical side, I acted as the bridge between business requirements and implementation reality. My development background helped me identify flawed implementation decisions early — including broken dynamic content logic and editorial workflows that would not scale in production.
+
+I also coordinated launch preparation, testing phases, rollback planning, post-launch validation, and the critical bug-fix window after release.
+
+---
+
+### **Result**
+
+The launch was moved from the Christmas period to mid-January to reduce operational risk, while still meeting the actual business deadline: the industry event at the end of January.
+
+The website launched successfully on time with:
+
+- 5,000+ migrated pages
+- 5 language versions
+- large-scale content imports completed
+- legal content finalized
+- ~15,000 redirects configured
+- stabilized editorial workflows
+- internal ownership established for ongoing support
+
+The platform remains live and operational today.

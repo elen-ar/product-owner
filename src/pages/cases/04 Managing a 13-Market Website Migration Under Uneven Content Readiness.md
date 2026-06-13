@@ -1,0 +1,78 @@
+## Challenge
+
+A global corporate website with 13 language versions and more than 8,000 pages required a complete redesign.
+
+The new design had already been delivered by an external agency, and the business wanted to launch it as quickly as possible. However, the content migration process created a major constraint: different language teams were progressing at very different speeds.
+
+Some key markets were ready for launch, while other language versions were still months — and in some cases years — away from being fully prepared.
+
+Waiting for all 13 markets to reach the same level of readiness would have significantly delayed the business benefits of the redesign.
+
+## My Role
+
+As the technical manager responsible for implementation and release coordination, I developed the rollout strategy and coordinated the work between development, content, and editorial teams.
+
+## Decision
+
+Instead of treating the redesign as a single large-scale launch, I proposed a phased migration model.
+
+The objective was to deliver value to ready markets immediately while allowing other language versions to continue operating until their content was prepared.
+
+This required:
+
+- Independent releases by language version
+- Coexistence of old and new designs over an extended period
+- Separate migration schedules for different markets
+- Consistent user experience despite different design generations being live simultaneously
+
+## Execution
+
+### Building a Migration Framework
+
+Because each language version existed as a separate content structure in the CMS, we were able to migrate markets independently.
+
+I created:
+
+- A rollout roadmap prioritizing business-critical markets
+- Release checkpoints and quality-control procedures
+- A migration sequence aligned with content readiness rather than technical completion
+
+### Coordinating Multiple Teams
+
+The redesign involved developers, designers, editors, and content managers working in parallel.
+
+To keep progress predictable, I established:
+
+- Clear ownership and responsibilities
+- Documentation and visual guidelines
+- Direct communication channels between content and development teams
+- Structured testing before publication
+
+### Managing Long-Term Design Coexistence
+
+A key challenge was maintaining both design systems simultaneously.
+
+Some language versions migrated shortly after launch, while others remained on the legacy design for up to two years due to content readiness constraints.
+
+To support this transition, we:
+
+- Maintained separate templates for legacy and redesigned pages
+- Applied targeted improvements to the old design to reduce visual inconsistency
+- Monitored navigation, links, scripts, and integrations across both systems
+
+## Results
+
+- Business-critical markets received the redesigned experience without waiting for all content teams to finish migration
+- Editors continued publishing content without disruption
+- The website remained fully operational throughout the transition
+- No content loss or major technical incidents occurred during rollout
+- Less-prepared markets migrated when ready, without blocking the overall programme
+- The redesign programme was delivered on schedule and received positive client feedback
+
+## Key Takeaway
+
+The biggest challenge was not implementing a new design.
+
+It was finding a way to deliver business value when a full launch was impossible.
+
+By creating a phased migration strategy based on content readiness, we avoided delaying the entire programme and enabled different markets to move at their own pace while maintaining a stable user experience.
