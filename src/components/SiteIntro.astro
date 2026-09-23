@@ -1,0 +1,52 @@
+---
+import { site } from "../../data/site";
+import ContactBar from "./ContactBar.astro";
+
+interface Props {
+  variant: "sidebar" | "mobile";
+}
+
+const { variant } = Astro.props;
+const isSidebar = variant === "sidebar";
+---
+
+{
+  isSidebar ? (
+    <>
+      <!-- <div>
+        <div>
+          <img src={site.hero.avatarSrc} alt={site.hero.avatarAlt} loading="eager" decoding="async" width="96" height="96" />
+        </div>
+        <div />
+      </div> -->
+
+      <div>
+        <h1>{site.hero.name}</h1>
+        <p>{site.hero.role}</p>
+        <p>{site.hero.tagline}</p>
+        <p>{site.hero.contact}</p>
+
+        <div>
+          <ContactBar />
+        </div>
+      </div>
+    </>
+  ) : (
+    <div>
+      <div>
+        <div>
+          <img src={site.hero.avatarSrc} alt={site.hero.avatarAlt} loading="eager" decoding="async" width="80" height="80" />
+        </div>
+      </div>
+      <h1>{site.hero.name}</h1>
+      <p>{site.hero.role}</p>
+      <div>
+        <p>{site.hero.tagline}</p>
+        <p>{site.hero.contact}</p>
+      </div>
+      <div>
+        <ContactBar />
+      </div>
+    </div>
+  )
+}

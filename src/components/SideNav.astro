@@ -1,0 +1,45 @@
+---
+import { site } from "../../data/site";
+import { navLinks } from "../../data/nav";
+import photo from "../images/ElenaReznikovaCV.jpg";
+import Home from "../components/Home.astro";
+---
+
+<aside id="sidebar">
+  <div>
+    <Home />
+    <!-- Nav -->
+    <ul class="sb-nav" id="sb-nav">
+      {
+        navLinks.map((link) => (
+          <li>
+            <a data-id={link.href} href={`#${link.href}`}>
+              <span class="dash" />
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <!-- Bottom -->
+  <div class="sb-bottom">
+    <a href={`mailto:${site.contact.email}`} class="sb-social">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        <path d="M22 6l-10 7L2 6"></path>
+      </svg>
+      Email
+    </a>
+    <a href={`mailto:${site.contact.linkedin}`} class="sb-social">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+        <rect x="2" y="9" width="4" height="12"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+      </svg>
+      LinkedIn
+    </a>
+    <div class="sb-copy">© 2026 {site.nav.name}</div>
+  </div>
+</aside>

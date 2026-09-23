@@ -1,0 +1,23 @@
+---
+import { site } from "../../data/site";
+---
+
+<div id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-blob"></div>
+  <p class="hero-label">Available for new opportunities</p>
+  <h1 class="hero-name">Elena<br />Reznikova</h1>
+  <p class="hero-bio">{site.hero.tagline}</p>
+  <div class="hero-stats">
+    {
+      site.hero.stats.map((stat) => (
+        <div>
+          <div class="stat-n">
+            <small>{stat.pretext}</small> {stat.digit}
+          </div>
+          <div class="stat-l">{stat.text}</div>
+        </div>
+      ))
+    }
+  </div>
+</div>

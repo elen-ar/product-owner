@@ -1,5 +1,33 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import MainHead from "../components/MainHead.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Cv from "../components/CV.astro";
+import Cases from "../components/Cases.astro";
+import Contacts from "../components/Contacts.astro";
+import Footer from "../components/Footer.astro";
+import SideNav from "../components/SideNav.astro";
+import "../styles/styles.css";
+
+const { title, description } = Astro.props;
 ---
 
-<Layout />
+<html lang="en">
+  <head>
+    <MainHead title={title} description={description} />
+  </head>
+
+  <body>
+    <Header />
+    <SideNav />
+    <main id="main">
+      <Hero />
+      <Cv />
+      <Cases />
+      <Contacts />
+      <slot />
+      <Footer />
+    </main>
+    <script src="../scripts/scripts.js"></script>
+  </body>
+</html>

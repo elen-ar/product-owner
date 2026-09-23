@@ -1,1 +1,13 @@
-<h1>Footer</h1>
+---
+import { site } from "../../data/site";
+---
+
+<div id="contacts" class="footer-strip">
+  <span class="footer-copy">© 2024 {site.nav.name} — All rights reserved</span>
+  <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    Back to top
+    <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M12 19V5M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
+</div>

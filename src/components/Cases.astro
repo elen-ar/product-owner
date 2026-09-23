@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+
+const cases = await getCollection("cases");
+---
+
+<section id="cases" class="section">
+  <p class="sec-label">Selected Cases</p>
+  <div class="cases-grid">
+    {
+      cases.map((item: any) => (
+        <a class="case-card" href={`/cases/${item.id}/`}>
+          <div class="case-img-wrap">
+            <!-- <img class="case-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=700&h=394&fit=crop&auto=format" alt="111" /> -->
+            <div class="case-img"></div>
+            <div class="case-overlay" />
+            <div class="case-metric">
+              <div class="case-metric-n">{item.data.digit}</div>
+              <div class="case-metric-l">{item.data.overlay}</div>
+            </div>
+            <div class="case-ext">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                <path d="M15 3h6v6" />
+                <path d="M10 14L21 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-top">
+              <>
+                <span class="case-lbl">{item.data.role}</span>
+                <span class="case-yr">{item.data.period}</span>
+              </>
+            </div>
+            <div class="case-title">{item.data.title}</div>
+            <div class="case-text">{item.data.summary}</div>
+            <div class="case-tags">
+              <>
+                {item.data.skills?.map((skill: string) => (
+                  <span class="case-tag">{skill}</span>
+                ))}
+              </>
+            </div>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</section>

@@ -1,19 +1,29 @@
 ---
+import Header from "../components/Header.astro";
+import MainHead from "../components/MainHead.astro";
 import Footer from "../components/Footer.astro";
+import SideNav from "../components/SideNav.astro";
+
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <title>Astro Basics</title>
+    <MainHead title={title} description={description} />
   </head>
   <body>
-    <slot />
-    <Footer />
+    <Header />
+    <div>
+      <SideNav />
+      <main>
+        <div>
+          <slot />
+        </div>
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>
 

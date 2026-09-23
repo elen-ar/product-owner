@@ -1,0 +1,37 @@
+<svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" width="480" height="200">
+  <defs>
+    <radialGradient id="r-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </radialGradient>
+    <radialGradient id="r-sweep" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="r-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="r-clip">
+      <rect width="480" height="200"/>
+    </clipPath>
+  </defs>
+  <rect width="480" height="200" fill="url(#r-bg)"/>
+  <!-- rings -->
+  <circle cx="240" cy="100" r="160" fill="none" stroke="#2dd4bf" stroke-opacity="0.10" stroke-width="1"/>
+  <circle cx="240" cy="100" r="120" fill="none" stroke="#2dd4bf" stroke-opacity="0.14" stroke-width="1"/>
+  <circle cx="240" cy="100" r="80"  fill="none" stroke="#2dd4bf" stroke-opacity="0.18" stroke-width="1"/>
+  <circle cx="240" cy="100" r="50"  fill="none" stroke="#2dd4bf" stroke-opacity="0.22" stroke-width="1"/>
+  <circle cx="240" cy="100" r="24"  fill="none" stroke="#2dd4bf" stroke-opacity="0.28" stroke-width="1"/>
+  <!-- crosshairs -->
+  <line x1="70"  y1="100" x2="410" y2="100" stroke="#2dd4bf" stroke-opacity="0.10" stroke-width="1"/>
+  <line x1="240" y1="0"   x2="240" y2="200" stroke="#2dd4bf" stroke-opacity="0.10" stroke-width="1"/>
+  <!-- sweep wedge -->
+  <path d="M240,100 L370,25 A150,150 0 0,0 390,100 Z"
+        fill="url(#r-sweep)" clip-path="url(#r-clip)"/>
+  <!-- blips -->
+  <circle cx="310" cy="70"  r="3" fill="#2dd4bf" opacity="0.9" filter="url(#r-glow)"/>
+  <circle cx="286" cy="119" r="3" fill="#2dd4bf" opacity="0.9" filter="url(#r-glow)"/>
+  <circle cx="257" cy="80"  r="3" fill="#2dd4bf" opacity="0.9" filter="url(#r-glow)"/>
+  <circle cx="240" cy="100" r="4" fill="#2dd4bf" opacity="1.0" filter="url(#r-glow)"/>
+</svg>

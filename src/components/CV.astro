@@ -1,0 +1,85 @@
+---
+import { site } from "../../data/site";
+import photo from "../images/ElenaReznikovaCV.jpg";
+---
+
+<section id="cv" class="section">
+  <p class="sec-label">CV</p>
+
+  <!-- About -->
+  <div class="about-grid">
+    <img class="about-photo" src={photo.src} alt={site.nav.name} />
+    <div>
+      <h2 class="about-heading">{site.about.intro}</h2>
+      {site.about.paragraphs.map((paragraph) => <p class="about-p">{paragraph}</p>)}
+      <ul>
+        {site.about.list.map((item) => <li class="about-p">{item}</li>)}
+      </ul>
+      <div class="about-meta">
+        <span class="about-meta-item">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 21s-8-6.5-8-12a8 8 0 1116 0c0 5.5-8 12-8 12z"></path>
+            <circle cx="12" cy="9" r="2"></circle>
+          </svg>
+          {site.contact.city}
+        </span>
+        <span class="about-meta-item">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="M22 6l-10 7L2 6"></path>
+          </svg>
+          {site.contact.email}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="exp-grid">
+    <div class="exp-sub-label">Experience</div>
+    {
+      site.experiences.map((position) => (
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot" />
+            <div class="tl-header">
+              <span class="tl-period">{position.period}</span>
+              <span class="tl-role">{position.title}</span>
+            </div>
+            <div class="tl-meta">
+              {position.company}
+              <>
+                <span class="sep">·</span>
+                <span class="loc">{position.location}</span>
+              </>
+            </div>
+            <p class="tl-desc">{position.summary}</p>
+            <ul>
+              {position.highlights.map((point) => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <!-- Skills -->
+  <div class="skills-grid">
+    <div id="skills" class="skills-sub-label">Skills</div>
+    <div class="skills-inner-grid">
+      {
+        site.skills.map((skill) => (
+          <div>
+            <div class="skill-cat">{skill.category}</div>
+            <div class="skill-tags">
+              {skill.skills.map((s) => (
+                <span class="skill-tag">{s}</span>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

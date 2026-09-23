@@ -1,0 +1,62 @@
+---
+import MainHead from "../../components/MainHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import SideNavCase from "../../components/SideNavCase.astro";
+import "../../styles/styles.css";
+import { getCollection, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const cases = await getCollection("cases");
+
+  return cases.map((item) => ({
+    params: {
+      slug: item.id,
+    },
+    props: {
+      caseStudy: item,
+    },
+  }));
+}
+
+const { caseStudy } = Astro.props as {
+  caseStudy: CollectionEntry<"cases">;
+};
+
+const { Content } = await render(caseStudy);
+---
+
+<html lang="en">
+  <head>
+    <MainHead title=`Elena Reznikova | ${caseStudy.data.title}` description={caseStudy.data.summary} />
+  </head>
+  <body>
+    <Header />
+    <SideNavCase current={caseStudy.id} />
+    <main id="main">
+      <section id="case" class="section">
+        <p>
+          <a href="/">← Back</a>
+        </p>
+
+        <h1 class="case-header">{caseStudy.data.title}</h1>
+        <div class="case-role">{caseStudy.data.role}</div>
+        <h5>{caseStudy.data.period}</h5>
+        {caseStudy.data.skills && (
+          <div class="case-skills">
+            {caseStudy.data.skills.map((skill) => (
+              <span>{skill}</span>
+            ))}
+          </div>
+        )}
+      </section>
+      <section id="case-content" class="section">
+        <div class="case-summary">{caseStudy.data.summary}</div>
+        <Content />
+      </section>
+      <Footer />
+    </main>
+    <script src="../../scripts/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+---
+import { site } from "../../data/site";
+import { navLinks } from "../../data/nav";
+---
+
+<!-- ── MOBILE TOPBAR ──────────────────────────────────────────── -->
+<div id="topbar">
+  <span class="topbar-name">{site.nav.name}</span>
+  <button class="topbar-btn" id="mob-toggle" aria-label="Menu">
+    <svg id="mob-icon-menu" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M3 12h18M3 6h18M3 18h18"></path>
+    </svg>
+    <svg id="mob-icon-close" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none">
+      <path d="M18 6L6 18M6 6l12 12"></path>
+    </svg>
+  </button>
+</div>
+<div id="mobile-drawer">
+  {
+    navLinks.map((link) => (
+      <li>
+        <a href={`#${link.href}`} class="nav-link" data-section-link>
+          {link.label}
+        </a>
+      </li>
+    ))
+  }
+</div>

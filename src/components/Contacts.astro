@@ -1,0 +1,30 @@
+---
+import { site } from "../../data/site";
+---
+
+<section id="contacts" class="section">
+  <p class="sec-label">Contacts</p>
+  <div class="contacts-grid">
+    <div>
+      <!-- <h2 class="contacts-heading">Let's build something <em>worth talking about.</em></h2>
+      <p class="contacts-bio">Open to senior marketing leadership, strategic consulting, and creative partnerships. If you have something interesting, I want to hear about it.</p> -->
+      <div class="contacts-links">
+        <a href={`mailto:${site.contact.email}`} class="contacts-link">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="M22 6l-10 7L2 6"></path>
+          </svg>
+          {site.contact.email}
+        </a>
+        <a href={site.contact.linkedin} class="contacts-link">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          {site.contact.li}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" width="480" height="200">
+  <defs>
+    <linearGradient id="s-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+    <linearGradient id="s-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#000" stop-opacity="0.8"/>
+      <stop offset="20%"  stop-color="#000" stop-opacity="0"/>
+      <stop offset="80%"  stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="s-glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="480" height="200" fill="url(#s-bg)"/>
+  <!-- stream 1 -->
+  <path d="M0,30 C40,30 40,12 80,12 S120,30 160,30 S200,12 240,12 S280,30 320,30 S360,12 400,12 S440,30 480,30"
+        fill="none" stroke="#0d9488" stroke-width="1" stroke-opacity="0.5"/>
+  <!-- stream 2 -->
+  <path d="M0,65 C40,65 40,53 80,53 S120,65 160,65 S200,53 240,53 S280,65 320,65 S360,53 400,53 S440,65 480,65"
+        fill="none" stroke="#14b8a6" stroke-width="1" stroke-opacity="0.6"/>
+  <!-- stream 3 (main, glowing) -->
+  <path d="M0,100 C40,100 40,80 80,80 S120,100 160,100 S200,80 240,80 S280,100 320,100 S360,80 400,80 S440,100 480,100"
+        fill="none" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.7" filter="url(#s-glow)"/>
+  <!-- stream 4 -->
+  <path d="M0,135 C40,135 40,125 80,125 S120,135 160,135 S200,125 240,125 S280,135 320,135 S360,125 400,125 S440,135 480,135"
+        fill="none" stroke="#14b8a6" stroke-width="1" stroke-opacity="0.5"/>
+  <!-- stream 5 -->
+  <path d="M0,168 C40,168 40,153 80,153 S120,168 160,168 S200,153 240,153 S280,168 320,168 S360,153 400,153 S440,168 480,168"
+        fill="none" stroke="#0d9488" stroke-width="1" stroke-opacity="0.4"/>
+  <!-- particles on main stream -->
+  <circle cx="80"  cy="80"  r="2.5" fill="#5eead4" opacity="0.9" filter="url(#s-glow)"/>
+  <circle cx="200" cy="100" r="2.5" fill="#5eead4" opacity="0.9" filter="url(#s-glow)"/>
+  <circle cx="320" cy="100" r="2.5" fill="#5eead4" opacity="0.9" filter="url(#s-glow)"/>
+  <circle cx="400" cy="80"  r="2.5" fill="#5eead4" opacity="0.9" filter="url(#s-glow)"/>
+  <rect width="480" height="200" fill="url(#s-fade)"/>
+</svg>
