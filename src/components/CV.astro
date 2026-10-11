@@ -4,16 +4,22 @@ import photo from "../images/ElenaReznikovaCV.jpg";
 ---
 
 <section id="cv" class="section">
-  <p class="sec-label">CV</p>
+  <p id="profile" class="sec-label">
+    Profile
+  </p>
 
   <!-- About -->
   <div class="about-grid">
     <img class="about-photo" src={photo.src} alt={site.nav.name} />
     <div>
       <h2 class="about-heading">{site.about.intro}</h2>
-      {site.about.paragraphs.map((paragraph) => <p class="about-p">{paragraph}</p>)}
+      {site.about.paragraphs.map((paragraph) => (
+        <p class="about-p">{paragraph}</p>
+      ))}
       <ul>
-        {site.about.list.map((item) => <li class="about-p">{item}</li>)}
+        {site.about.list.map((item) => (
+          <li class="about-p">{item}</li>
+        ))}
       </ul>
       <div class="about-meta">
         <span class="about-meta-item">
@@ -36,50 +42,50 @@ import photo from "../images/ElenaReznikovaCV.jpg";
 
   <!-- Experience -->
   <div class="exp-grid">
-    <div class="exp-sub-label">Experience</div>
-    {
-      site.experiences.map((position) => (
-        <div class="timeline">
-          <div class="tl-item">
-            <div class="tl-dot" />
-            <div class="tl-header">
-              <span class="tl-period">{position.period}</span>
-              <span class="tl-role">{position.title}</span>
-            </div>
-            <div class="tl-meta">
-              {position.company}
-              <>
-                <span class="sep">·</span>
-                <span class="loc">{position.location}</span>
-              </>
-            </div>
-            <p class="tl-desc">{position.summary}</p>
-            <ul>
-              {position.highlights.map((point) => (
-                <li>{point}</li>
-              ))}
-            </ul>
+    <div id="career" class="exp-sub-label">
+      Career
+    </div>
+    {site.experiences.map((position) => (
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot" />
+          <div class="tl-header">
+            <span class="tl-period">{position.period}</span>
+            <span class="tl-role">{position.title}</span>
           </div>
+          <div class="tl-meta">
+            {position.company}
+            <>
+              <span class="sep">·</span>
+              <span class="loc">{position.location}</span>
+            </>
+          </div>
+          <p class="tl-desc">{position.summary}</p>
+          <ul>
+            {position.highlights.map((point) => (
+              <li>{point}</li>
+            ))}
+          </ul>
         </div>
-      ))
-    }
+      </div>
+    ))}
   </div>
   <!-- Skills -->
   <div class="skills-grid">
-    <div id="skills" class="skills-sub-label">Skills</div>
+    <div id="expertise" class="skills-sub-label">
+      Expertise
+    </div>
     <div class="skills-inner-grid">
-      {
-        site.skills.map((skill) => (
-          <div>
-            <div class="skill-cat">{skill.category}</div>
-            <div class="skill-tags">
-              {skill.skills.map((s) => (
-                <span class="skill-tag">{s}</span>
-              ))}
-            </div>
+      {site.skills.map((skill) => (
+        <div>
+          <div class="skill-cat">{skill.category}</div>
+          <div class="skill-tags">
+            {skill.skills.map((s) => (
+              <span class="skill-tag">{s}</span>
+            ))}
           </div>
-        ))
-      }
+        </div>
+      ))}
     </div>
   </div>
 </section>

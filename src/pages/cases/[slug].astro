@@ -35,11 +35,10 @@ const { Content } = await render(caseStudy);
     <Header />
     <SideNavCase current={caseStudy.id} />
     <main id="main">
-      <section id="case" class="section">
-        <p>
+      <section id="case" class="case-hero section">
+        <div class="case-back">
           <a href="/">← Back</a>
-        </p>
-
+        </div>
         <h1 class="case-header">{caseStudy.data.title}</h1>
         <div class="case-role">{caseStudy.data.role}</div>
         <h5>{caseStudy.data.period}</h5>
@@ -51,7 +50,7 @@ const { Content } = await render(caseStudy);
           </div>
         )}
       </section>
-      <section id="case-content" class="section">
+      <section id="case-content" class="case-content section">
         <div class="case-summary">{caseStudy.data.summary}</div>
         <Content />
       </section>
