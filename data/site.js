@@ -45,8 +45,8 @@ export const site = {
   experiences: [
     {
       period: "2024–Present",
-      title: "Product Owner & Freelance WebDev",
-      company: "confidential company",
+      title: "Product Owner & Digital Solutions Consultant",
+      company: "Self-employed",
       location: "Germany",
       summary: "Combination of contract-based Product Ownership for corporate websites and selected freelance web development projects.",
       highlights: ["Worked as Product Owner for corporate websites (confidential company), owning roadmap, backlog prioritization, and UX improvements.", "Coordinated collaboration between development, design, and marketing stakeholders.", "Delivered a custom React-based landing page with animations and responsive design as a freelance project."],

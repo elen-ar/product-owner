@@ -428,7 +428,6 @@ button {
   /*grid-template-columns: repeat(2, 1fr);*/
   gap: 1.75rem 3rem;
   max-width: 52rem;
-  margin-bottom: 3.5rem;
 }
 
 .skill-cat {
@@ -704,7 +703,7 @@ button {
 
 .case-text {
   padding-bottom: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
 }
 
 .case-tags {
