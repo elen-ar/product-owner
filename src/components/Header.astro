@@ -15,14 +15,12 @@ import { navLinks } from "../../data/nav";
     </svg>
   </button>
 </div>
-<div id="mobile-drawer">
-  {
-    navLinks.map((link) => (
-      <li>
-        <a href={`#${link.href}`} class="nav-link" data-section-link>
-          {link.label}
-        </a>
-      </li>
-    ))
-  }
-</div>
+<ul id="mobile-drawer">
+  {navLinks.map((link) => (
+    <li>
+      <a href={`#${link.href}`} class="nav-link" data-section-link>
+        {link.label}
+      </a>
+    </li>
+  ))}
+</ul>
