@@ -41,10 +41,8 @@ import photo from "../images/ElenaReznikovaCV.jpg";
   </div>
 
   <!-- Experience -->
-  <div class="exp-grid">
-    <div id="career" class="exp-sub-label">
-      Career
-    </div>
+  <div class="exp-grid" id="career">
+    <div class="exp-sub-label">Career</div>
     {site.experiences.map((position) => (
       <div class="timeline">
         <div class="tl-item">
@@ -71,10 +69,8 @@ import photo from "../images/ElenaReznikovaCV.jpg";
     ))}
   </div>
   <!-- Skills -->
-  <div class="skills-grid">
-    <div id="expertise" class="skills-sub-label">
-      Expertise
-    </div>
+  <div class="skills-grid" id="expertise">
+    <div class="skills-sub-label">Expertise</div>
     <div class="skills-inner-grid">
       {site.skills.map((skill) => (
         <div>

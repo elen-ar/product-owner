@@ -11,7 +11,7 @@ export const site = {
   hero: {
     name: "Elena Reznikova",
     role: "Product Owner · Web Strategy · UX",
-    tagline: "I define and grow complex corporate websites: strategy, UX, and cross-market consistency.",
+    tagline: "I lead the strategy and evolution of complex corporate websites, aligning business goals, user experience, and technical delivery across markets.",
     contact: "",
     avatarSrc: "/favicon.svg",
     avatarAlt: "Elena Reznikova",
@@ -48,8 +48,8 @@ export const site = {
       title: "Product Owner & Digital Solutions Consultant",
       company: "Self-employed",
       location: "Germany",
-      summary: "Combination of contract-based Product Ownership for corporate websites and selected freelance web development projects.",
-      highlights: ["Worked as Product Owner for corporate websites (confidential company), owning roadmap, backlog prioritization, and UX improvements.", "Coordinated collaboration between development, design, and marketing stakeholders.", "Delivered a custom React-based landing page with animations and responsive design as a freelance project."],
+      summary: "Independent consulting focused on Product Ownership for corporate websites, alongside selected web development projects.",
+      highlights: ["Worked as Product Owner for a B2B technology company, owning the roadmap, backlog prioritization, and UX improvements for its corporate websites.", "Coordinated collaboration between development, design, and marketing stakeholders.", "Delivered a custom React-based landing page with animations and responsive design for a client project."],
     },
     {
       period: "2022–2024",

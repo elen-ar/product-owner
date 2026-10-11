@@ -411,6 +411,7 @@ button {
 /* ──────── CV — SKILLS ──────── */
 .skills-grid {
   max-width: 52rem;
+  padding-top: 3.5rem;
 }
 .skills-sub-label {
   font-family: var(--mono);
@@ -454,7 +455,6 @@ button {
 /* ──────── CV — EXPERIENCE ──────── */
 .exp-grid {
   max-width: 52rem;
-  margin-bottom: 3.5rem;
 }
 .exp-sub-label {
   font-family: var(--mono);
@@ -627,7 +627,6 @@ button {
   bottom: 0.75rem;
   left: 1rem;
 }
-
 .case-metric-n {
   font-family: var(--serif);
   font-size: 2rem;

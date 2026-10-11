@@ -1,6 +1,6 @@
 // ── Sidebar scroll spy ───────────────────────────────────────
 const navLinks = document.querySelectorAll("#sb-nav a");
-const sections = ["hero","cv","profile","career","expertise", "cases","contacts"];
+const sections = ["hero","profile","career","expertise", "cases","contacts"];
 
 const spy = new IntersectionObserver(
   (entries) => {
